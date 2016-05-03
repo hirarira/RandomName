@@ -1,0 +1,49 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="./makename.js"></script>
+<title>名前自動生成</title>
+</head>
+<body>
+<font size="6">名前自動生成機 ver1.06</font><br><br>
+めちゃくちゃな名前になるのは仕様<br>
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.hirarira.net/namemaker/" data-text="自動名前生成器">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><br><br>
+<form name="name_form">
+小文字混入確率：<select name="one_probability">
+<option value=0>0%</option>
+<option value=5>5%</option>
+<option value=10>10%</option>
+<option value=15>15%</option>
+<option value=20 selected>20%</option>
+<option value=25>25%</option>
+<option value=30>30%</option>
+</select>
+最大文字数：<select name="max_length">
+<option value=3>3文字</option>
+<option value=4>4文字</option>
+<option value=5 selected>5文字</option>
+<option value=6>6文字</option>
+<option value=7>7文字</option>
+</select>
+<br>
+作成件数：<select name="o_num">
+<option value=10>10</option>
+<option value=50>50</option>
+<option value=100 selected>100</option>
+<option value=500>500</option>
+</select>
+<input type="checkbox" name="add_no" value="0" checked="checked">Noを付ける
+<input type="button" name="" value="生成" onclick="Make_name()">
+<input type="reset" name="" value="クリア"><br>
+<textarea name="result" rows="35" cols="50"></textarea><br><br>
+</form>
+更新履歴<br>
+<textarea rows="2" cols="80">
+var1.06　最大文字数を指定できるように　2016/02/26
+var1.05　半音混入確率を調整できるように　2016/02/26
+ver1.00　完成　2015/03/11
+</textarea>
+</body>
+</html>
